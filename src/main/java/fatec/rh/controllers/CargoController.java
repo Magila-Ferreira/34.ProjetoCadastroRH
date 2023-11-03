@@ -10,4 +10,9 @@ public class CargoController {
     public String inserirCargo() {
         return "/Cargo/inserir";
     }
+
+    @GetMapping("/Cargo/listar")
+    public String listarCargo() {
+        return "/Cargo/listar";
+    }
 }

@@ -19,10 +19,10 @@ nav {
 	display: flex;
 } 
 .nav__link {
-	padding: 5px 30px;
-	margin: 50px;
+	width: auto;
+	height: auto;
+	padding: 5px;
 	vertical-align: middle;
-	line-height: 50px;
 	font-size: 1rem;
 	font-weight: bold;
 	color: #036;
@@ -45,9 +45,15 @@ nav {
 	max-height: 50px;
 	padding-top: 10px;
 }
+.nav__link__cargos {
+	margin-right: 21%;
+}
 .section__text {
 	width: 80%;
-	margin-left: 14%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    align-items: center;
 }
 main {
 	padding: 2%;
