@@ -15,4 +15,9 @@ public class CargoController {
     public String listarCargo() {
         return "/Cargo/listar";
     }
+
+    @GetMapping("/Cargo/editar")
+    public String editarCargo() {
+        return "/Cargo/editar";
+    }
 }

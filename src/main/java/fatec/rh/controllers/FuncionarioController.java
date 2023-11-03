@@ -14,4 +14,9 @@ public class FuncionarioController {
     public String listarFuncionario() {
         return "/Funcionario/listar";
     }
+
+    @GetMapping("/Funcionario/editar")
+    public String editarFuncionario() {
+        return "/Funcionario/editar";
+    }
 }
