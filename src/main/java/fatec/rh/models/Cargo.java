@@ -23,13 +23,13 @@ public class Cargo {
   @Column(nullable = false)
   private long carg_codigo;
 
-  @Column(nullable = false)
+  @Column(length = 30, nullable = false)
   private String carg_nome;
 
   @Column(nullable = false)
   private double carg_sal_mes;
 
-  @Column(nullable = false)
+  @Column(length = 30, nullable = false)
   private String carg_descricao;
 
   @Column(nullable = false)

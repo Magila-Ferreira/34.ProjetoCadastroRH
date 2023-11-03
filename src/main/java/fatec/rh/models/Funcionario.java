@@ -23,10 +23,10 @@ public class Funcionario {
     @Column(nullable = false)
     private long func_codigo;
 
-    @Column(nullable = false)
+    @Column(length = 30, nullable = false)
     private String nome;
     
-    @Column(name = "carteira_trab", nullable = false)
+    @Column(name = "carteira_trab", length = 30, nullable = false)
     private String ctps;
 
     @Column(nullable = false)

@@ -29,8 +29,8 @@ public class Associado {
     @Column(length = 8, nullable = false)
     private Date aloc_fim;
 
-    @Column(length = 3, nullable = false)
-    private int aloc_horas_mes;
+    @Column(nullable = false)
+    private double aloc_horas_mes;
 
     @ManyToOne 
     @JoinColumn(name = "func_codigo", nullable = false)
