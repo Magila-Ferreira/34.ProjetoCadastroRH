@@ -11,13 +11,14 @@ import jakarta.persistence.Table;
 import java.sql.Date;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Table(name = "TB_Associado")
 @Getter
 @Setter
+@ToString
 public class Associado {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)

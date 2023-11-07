@@ -1,3 +1,4 @@
+/* Index */
 * {
 	margin: 0;
 	padding: 0;
@@ -11,7 +12,7 @@ body {
 }
 
 .header {
-	background-image: linear-gradient(to bottom right, #def, #7bf, #789);
+	background-image: linear-gradient(to top,#cdf, #7bf, #7bf);
 	height: 20%;
 }
 
@@ -127,4 +128,43 @@ b {
 	margin: 5px 0;
 	font-size: 1rem;
 	font-weight: normal;
+}
+
+/* Formulários -> Cargo/inserir e Funcionario/inserir */
+.formulario {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 500;
+}
+.label__input, .bt__inserir {
+    margin-left: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input.dados {
+    display: flex;
+    width: 35%;
+	padding-left: 10px;
+}
+.bt__inserir {
+    padding: 1px 10px;
+    font-size: 1.2rem;
+    background-color: #036;
+    color: #cdf;
+    margin-left: 56%;
+}
+.bt__inserir:hover {
+    background-color: #012;
+    color: #7bf;
+}
+
+/* Tabelas -> Cargo/listar e Funcionario/listar */
+.table__th {
+	font-weight: normal;
+	height: 50px;
+	border-bottom: 0.1px solid #789;
+}
+.th__editar, .th__excluir {
+	width: 70px;
+	text-align: center;
 }

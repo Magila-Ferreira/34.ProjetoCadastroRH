@@ -1,8 +1,9 @@
 package fatec.rh.services;
 
 import org.springframework.stereotype.Service;
+
 import fatec.rh.models.Associado;
-import fatec.rh.repositories.AssociadoRepos;
+import fatec.rh.repository.AssociadoRepos;
 
 @Service
 public class AssociadoService {

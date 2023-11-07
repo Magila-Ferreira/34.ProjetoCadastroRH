@@ -25,6 +25,21 @@
 	</header>
 	<main>
 		<h1>Cadastro de cargos</h1>
+		<form th:action="@{/Cargo/inserir}" th:object="${Cargo}" method="POST" class="formulario">
+			<div class="label__input">
+				<label>Cargo:</label>
+				<input class="dados" type="text" maxlength="30" placeholder="Digite o nome do cargo" th:field="*{nome}"/>
+			</div>
+			<div class="label__input">
+				<label>Descrição:</label>
+				<input class="dados" type="text" maxlength="30" placeholder="Digite a descrição do cargo" th:field="*{descricao}"/>
+			</div>
+			<div class="label__input">
+				<label>Salário Mensal:</label>
+				<input class="dados" type="number" maxlength="30" th:field="*{salario}"/>
+			</div>
+			<input class="bt__inserir" type="submit"></input>
+		</form>
 	</main>
 	<footer class="footer">
 		<h3 class="disciplina">

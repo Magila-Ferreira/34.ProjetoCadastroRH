@@ -27,6 +27,27 @@
 	</header>
 	<main>
 		<h1>Lista de cargos</h1>
+		<hr>
+		<table class="tabela__listar__cargo">
+			<thead>
+				<tr class="table__tr">
+					<th>Cargo</th>
+					<th>Descrição</th>
+					<th>Salário</th>
+					<th class="th__editar">Editar</th>
+					<th class="th__excluir">Excluir</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="Cargo: ${Cargos}">
+					<th class="table__th" th:text="*{Cargo.nome}"></th>
+					<th class="table__th" th:text="*{Cargo.descricao}"></th>
+					<th class="table__th" th:text="*{Cargo.salario}"></th>
+					<th class="table__th th__editar"><img src="/img/pencil.png"/></th>
+					<th class="table__th th__excluir"><img src="/img/delete.png"/></th>
+				</tr>
+			</tbody>
+		</table>
 	</main>
 	<footer class="footer">
 		<h3 class="disciplina">

@@ -1,41 +1,45 @@
 package fatec.rh.models;
 
 import java.sql.Date;
-import java.util.ArrayList;
-import java.util.List;
+//import java.util.ArrayList;
+//import java.util.List;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+//import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Table(name = "TB_Funcionario")
 @Getter
 @Setter
+@ToString
 public class Funcionario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(nullable = false)
-    private long func_codigo;
+    @Column(name = "func_codigo", nullable = false)
+    private int id;
 
-    @Column(length = 30, nullable = false)
+    @Column(name = "func_nome", length = 30, nullable = false)
     private String nome;
     
-    @Column(name = "carteira_trab", length = 30, nullable = false)
+    @Column(name = "func_ctps", length = 30, nullable = false)
     private String ctps;
 
-    @Column(nullable = false)
-    private Date dt_admissao;
+    @Column(name = "func_dt_admissao", nullable = false)
+    private Date admissao;
 
-    @Column(nullable = false)
-    private Date dt_rescisao;
+    @Column(name = "func_dt_rescisao", nullable = false)
+    private Date rescisao;
     
+    /* 
     @Column(nullable = false)
     @OneToMany(mappedBy = "funcionario")
     private List<Associado>associado=new ArrayList<>(); 
+ */
 }

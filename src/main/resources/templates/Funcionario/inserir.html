@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"
+xmlns:th="http://thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,6 +27,26 @@
 	</header>
 	<main>
 		<h1>Cadastro de funcionários</h1>
+		<form th:action="@{/Funcionario/inserir}" th:object="${Funcionario}" method="POST" class="formulario">
+			<div class="label__input">
+				<label>Nome:</label>
+				<input class="dados" type="text"  maxlength="30" placeholder="Digite o nome do funcionário"
+				th:field="*{nome}"/>
+			</div>
+			<div class="label__input">
+				<label>Carteira de trabalho:</label>
+				<input class="dados" type="number" maxlength="30" placeholder="Digite o número da carteira de trabalho" th:field="*{ctps}"/>
+			</div>
+			<div class="label__input">
+				<label>Admissão:</label>
+				<input class="dados" type="date" th:field="*{admissao}"/>
+			</div>
+			<div class="label__input">
+				<label>Data de Rescisão:</label>
+				<input class="dados" type="date" th:field="*{rescisao}"/>
+			</div>
+			<input class="bt__inserir" type="submit"></input>
+		</form>
 	</main>
 	<footer class="footer">
 		<h3 class="disciplina">

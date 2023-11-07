@@ -26,6 +26,28 @@
 	</header>
 	<main>
 		<h1>Lista de funcionários</h1>
+		<table class="tabela__listar__funcionario">
+			<thead>
+				<tr class="table__tr">
+					<th>Nome</th>
+					<th>Carteira de trabalho</th>
+					<th>Admissão</th>
+					<th>Rescisão</th>
+					<th class="th__editar">Editar</th>
+					<th class="th__excluir">Excluir</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="Funcionario: ${Funcionarios}">
+					<th class="table__th" th:text="*{Funcionario.nome}"></th>
+					<th class="table__th" th:text="*{Funcionario.ctps}"></th>
+					<th class="table__th" th:text="*{Funcionario.admissao}"></th>
+					<th class="table__th" th:text="*{Funcionario.rescisao}"></th>
+					<th class="table__th th__editar"><img src="/img/pencil.png"/></th>
+					<th class="table__th th__excluir"><img src="/img/delete.png"/></th>
+				</tr>
+			</tbody>
+		</table>
 	</main>
 	<footer class="footer">
 		<h3 class="disciplina">

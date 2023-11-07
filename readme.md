@@ -8,14 +8,16 @@
 (OK)
 
 3. Construa as seguintes classes para Funcionário e Cargo:
-   a) Controle          
+   a) Controle            
    b) Repositório
    c) Serviços
+(OK)
 
 4. Construa as respectivas páginas para manipular os dados de Funcionário e Cargo:
    a) Listar
    b) Incluir
    c) Alterar
+(OK)
 
 5. Grave as informações no banco de dados MySql.
 
@@ -59,3 +61,5 @@ heranca_br_singleTable ou heranca_br
 2. service - regras bd
 3. repository - indicar as classes de utilização do repositorio padrão
 4. model - definição dos campos da tabela (por classe)
+
+
